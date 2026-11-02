@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vikramaditya | Backend &amp; Quantitative Development</title>
+  <meta name="description" content="Vikramaditya, UIUC Computer Science and Statistics student building backend systems, data analysis tools, and low-latency C++ engines. Seeking Summer 2027 SWE and Quant Dev internships.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">vikramaditya</a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap">
+        <p class="eyebrow">UIUC &middot; Computer Science + Statistics</p>
+        <h1 id="hero-title">Hi, I'm Vikramaditya. I build <span>fast, reliable systems.</span></h1>
+        <p class="lede">
+          Undergraduate at the University of Illinois Urbana-Champaign focused on backend systems,
+          data analysis, and quantitative development. Seeking Summer 2027 Software Engineering
+          and Quantitative Development internships.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+          <a class="btn" href="https://github.com/" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="exp-title">
+      <div class="wrap">
+        <h2 class="section-title" id="exp-title">Experience</h2>
+        <article class="card">
+          <h3>Software Engineering Intern &middot; Tradegrub</h3>
+          <p class="meta">Summer 2026</p>
+          <ul>
+            <li>Developed backend scheduling APIs with Python, FastAPI, and GraphQL.</li>
+            <li>Built Model Context Protocol (MCP) servers.</li>
+            <li>Designed and implemented PostgreSQL data layers.</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies">
+            <li>Python</li><li>FastAPI</li><li>GraphQL</li><li>PostgreSQL</li><li>MCP</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="proj-title">
+      <div class="wrap">
+        <h2 class="section-title" id="proj-title">Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Limit Order Book Engine</h3>
+            <p class="meta">Single-threaded C++20 LOB reconstruction engine</p>
+            <div class="stats">
+              <div class="stat"><strong>1.5M</strong><span>messages / sec</span></div>
+              <div class="stat"><strong>55&micro;s</strong><span>p99 latency</span></div>
+            </div>
+            <ul>
+              <li>Parses Nasdaq ITCH 5.0 binary feeds.</li>
+              <li>Reconstructs the order book from the message stream in a single thread.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>C++20</li><li>Nasdaq ITCH 5.0</li></ul>
+          </article>
+
+          <article class="card">
+            <h3>Eco Illini Supermileage</h3>
+            <p class="meta">Data Analysis Lead</p>
+            <ul>
+              <li>Built Extended Kalman Filter scripts in MATLAB for vehicle state estimation.</li>
+              <li>Built Particle Swarm Optimization scripts in MATLAB.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>MATLAB</li><li>EKF</li><li>PSO</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <p>
+        &copy; <time datetime="2026">2026</time> Vikramaditya &middot;
+        <a href="https://github.com/" rel="noopener">GitHub</a> &middot;
+        <a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a> &middot;
+        <a href="resume.pdf" download>Resume</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

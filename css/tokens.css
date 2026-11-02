@@ -1,0 +1,55 @@
+/* Design tokens: primitives (--p-*) -> semantic (--s-*).
+   Dark mode uses light-dark() and defaults to the system preference (no JS). */
+
+:root {
+  color-scheme: light dark;
+
+  /* Primitives */
+  --p-slate-50: #f8fafc;
+  --p-slate-100: #eef2f7;
+  --p-slate-300: #cbd5e1;
+  --p-slate-500: #64748b;
+  --p-slate-600: #475569;
+  --p-slate-700: #334155;
+  --p-slate-800: #1e2535;
+  --p-slate-900: #121826;
+  --p-slate-950: #0a0e18;
+  --p-white: #ffffff;
+  --p-indigo-400: #818cf8;
+  --p-indigo-600: #4f46e5;
+  --p-cyan-400: #22d3ee;
+  --p-cyan-700: #0e7490;
+
+  --p-font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --p-font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  --p-space-1: 0.25rem;
+  --p-space-2: 0.5rem;
+  --p-space-3: 0.75rem;
+  --p-space-4: 1rem;
+  --p-space-6: 1.5rem;
+  --p-space-8: 2rem;
+  --p-space-12: 3rem;
+  --p-space-20: 5rem;
+
+  --p-radius: 0.75rem;
+
+  /* Semantic */
+  --s-bg: light-dark(var(--p-slate-50), var(--p-slate-950));
+  --s-surface: light-dark(var(--p-white), var(--p-slate-900));
+  --s-surface-raised: light-dark(var(--p-slate-100), var(--p-slate-800));
+  --s-border: light-dark(var(--p-slate-300), var(--p-slate-700));
+  --s-text: light-dark(var(--p-slate-900), var(--p-slate-100));
+  --s-text-muted: light-dark(var(--p-slate-600), var(--p-slate-300));
+  --s-accent: light-dark(var(--p-indigo-600), var(--p-indigo-400));
+  --s-accent-2: light-dark(var(--p-cyan-700), var(--p-cyan-400));
+  --s-on-accent: light-dark(var(--p-white), var(--p-slate-950));
+  --s-focus: var(--s-accent-2);
+
+  --s-font-body: var(--p-font-sans);
+  --s-font-code: var(--p-font-mono);
+  --s-gap: var(--p-space-6);
+  --s-section-pad: var(--p-space-20);
+  --s-card-radius: var(--p-radius);
+  --s-measure: 68rem;
+}
