@@ -22,7 +22,7 @@ Browser ──► CDN edge (cached HTML/CSS/PDF) ──► (rare) origin: static
 index.html        Semantic page: hero, experience, projects
 css/tokens.css    Design tokens (primitives and semantic)
 css/styles.css    Component styles, using semantic tokens only
-resume.pdf        Add your resume here (linked from the hero and footer)
+Vikramaditya_Rajput_Resume.pdf        Add your resume here (linked from the hero and footer)
 ```
 
 ## Design tokens and dark mode
@@ -34,6 +34,6 @@ resume.pdf        Add your resume here (linked from the hero and footer)
 
 ## Before deploying
 
-1. Add `resume.pdf` to the project root.
+1. Add `Vikramaditya_Rajput_Resume.pdf` to the project root.
 2. Replace the placeholder `https://github.com/` and `https://www.linkedin.com/` links in `index.html` with your profile URLs.
 3. Push to your static host. No build command is needed, and the publish directory is the repo root.
